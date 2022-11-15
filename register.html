@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Claims Register</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container bg-light heading d-flex flex-row justify-content-between align-items-center">
+            <div>
+                <h1>SpeedyClaims</h1>
+            </div>
+            <div>
+                <button class="button">LOG OUT</a>
+            </div>
+        </div>
+        <div class="container bg-black heading d-flex flex-row justify-content-between align-items-left">
+            <div>
+                <button class="button">NEW CLAIM</a>
+            </div>
+            <div>
+                <button class="button">OPEN CLAIMS</a>
+            </div>
+            <div>
+                <button class="button">SEARCH</a>
+            </div>
+            <div>
+                <button class="button">ARCHIVE</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <h1>Register new claim</h1>
+            </div>
+            
+            <div class="container form">
+                <form action="somepage.html" method="post">
+
+                    <label for="policyNumber" >Policy Number *</label>
+                    <input type="text" name="policyNumber" id="policyNumber" placeholder="policy number" required>
+
+                    <label for="title">Title *</label>
+                    <select id="title" name="title" required>
+                        <option value="" disabled selected>-- select --</option>
+                        <option value="mr">Mr</option>
+                        <option value="ms">Ms</option>
+                        <option value="mx">Mx</option>
+                    </select>
+                    
+                    
+                    <label for="firstName" >First name *</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+                    
+                    
+                    <label for="surname" >Surname *</label>
+                    <input type="text" name="surname" id="surname" placeholder="surname" required>
+
+                    <label for="email" >Email *</label>
+                    <input type="text" name="email" id="email" placeholder="email" required>
+
+                    <label for="phoneNum" >Phone Number *</label>
+                    <input type="text" name="phoneNum" id="phoneNum" placeholder="phone number" required>
+
+                    <button class="button text-center">Submit</button>
+                </form>
+            </div>  
+        </div>
+        <div class="container footer">
+            <h6>Copyright SpeedyClaims 2022</h6>
+        </div>
+    </body>
+</html>
